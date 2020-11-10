@@ -1,0 +1,12 @@
+<file name="untCadTipoVeiculo">
+    <classe name="TfrmCadTipoVeiculo" inherited="TfrmTpCadastro">
+        <summary>
+    	    Formulário para manutenção do cadastro de tipos de veículos.
+            <para>
+                A partir deste formulário é possível executar os procedimentos inerentes a uma manutenção de cadastro, herdando 
+                da classe TfrmTpCadastro os seguintes eventos:
+                Consultar, Incluir, Alterar, Excluir, Imprimir ou Exportar Lista.
+            </para>
+        </summary>
+    </classe>
+</file>

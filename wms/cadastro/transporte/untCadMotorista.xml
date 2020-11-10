@@ -1,0 +1,90 @@
+<file name="untCadMotorista">
+    <classe name="TfrmCadMotorista" inherited="TfrmTpCadastro">
+        <summary>
+    	    Formulário para manutenção do cadastro de motoristas. 
+            <para>
+                A partir deste formulário é possível executar os procedimentos inerentes a uma manutenção de cadastro, herdando 
+                da classe TfrmTpCadastro os seguintes eventos:
+                Consultar, Incluir, Alterar, Excluir, Imprimir ou Exportar Lista.
+            </para>
+        </summary>
+        <instruction name="btnMunicipioClick">
+            <summary>
+	    		Procedimento com a finalidade de abrir o cadastro de municípios durante a manutenção do cadastro de motoristas.
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referênte ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns></returns>
+            <exception></exception>
+            <remarks>           
+                Informações complementares:
+                <para>- Este evento permite escolher um dos municípios previamente cadastrado.</para>
+            </remarks>
+        </instruction>
+        <instruction name="edMunicipioExit">
+            <summary>
+                Procedimento com a finalidade de buscar a descrição do município informado e apresentá-la ao lado do respectivo campo.
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referênte ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns></returns>
+            <exception></exception>
+            <remarks>                
+            </remarks>
+        </instruction>
+        <instruction name="btnFornecedorMotoristaClick">
+            <summary>
+	    		Procedimento com a finalidade de abrir o cadastro de fornecedor durante a manutenção do cadastro de motoristas.
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referênte ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns></returns>
+            <exception></exception>
+            <remarks>           
+                Informações complementares:
+                <para>- Este evento permite escolher um dos fornecedores previamente cadastrado.</para>
+            </remarks>
+        </instruction>
+        <instruction name="edFornecedorMotoristaExit">
+            <summary>
+                Procedimento com a finalidade de buscar a razão social do fornecedor informado e apresentá-la ao lado do respectivo campo.
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referênte ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns></returns>
+            <exception></exception>
+            <remarks>                
+            </remarks>
+        </instruction>
+        <instruction name="btnFornecedorTransportadoraClick">
+            <summary>
+	    		Procedimento com a finalidade de abrir o cadastro de transportadoras durante a manutenção do cadastro de motoristas.
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referênte ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns></returns>
+            <exception></exception>
+            <remarks>           
+                Informações complementares:
+                <para>- Este evento permite escolher uma das transportadoras previamente cadastrada.</para>
+            </remarks>
+        </instruction>
+        <instruction name="edFornecedorTransportadoraExit">
+            <summary>
+                Procedimento com a finalidade de buscar a razão social da transportadora informada e apresentá-la ao lado do respectivo campo.
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referênte ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns></returns>
+            <exception></exception>
+            <remarks>                
+            </remarks>
+        </instruction>
+    </classe>
+</file>

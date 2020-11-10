@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="../js/action.js"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="shortcut icon" href="../../img/logo_hmi.ico">
+    <title>HMI Consultant</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="col-md-2">
+            <a class="navbar-brand" href="../../index.html"><img height="50em" src="../../img/logo_hmi2.png" class="img-responsive" alt="logo"></a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cadastros</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="untParametroSistema.html">Parâmetros do Sistema</a></li>
+                        <li><a class="dropdown-item" href="untCadEmpresa.html">Empresa</a></li>
+                        <li><a class="dropdown-item" href="untCadFilial.html">Filial</a></li>
+                        <li><a class="dropdown-item" href="untCadMunicipio.html">Municípios</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li>
+                            <a class="dropdown-item">Fornecedor »</a>
+                            <ul class="submenu dropdown-menu">
+                                <li><a class="dropdown-item" href="fornecedores/untCadFornecedor.html">Fornecedor</a></li>
+                                <li><a class="dropdown-item" href="fornecedores/untCadFuncionario.html">Funcionário</a></li>
+                                <li><a class="dropdown-item" href="fornecedores/untCadFuncao.html">Função</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <!--li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li-->
+            </ul>
+        </div>
+    </nav>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+            <li class="breadcrumb-item">Cadastros</li>
+            <li class="breadcrumb-item active" aria-current="page">Parâmetros do Sistema</li>
+            <div class="container">
+                <div class="row">
+                    <div class="col-1 col-sm-4 offset-lg-8 div-wrapper d-flex justify-content-center align-items-center">
+                        <div class="div-to-rigth">
+                            <li>
+                                <a class="navbar-brand" href="pdf/untParametroSistema.pdf"><img height="30em" src="../../img/pdf.png" class="img-responsive" alt="logo"></a>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ol>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-8 col-sm-12 offset-lg-0 div-wrapper d-flex justify-content-center align-items-center">
+                <div class="div-to-align">
+                    <h3><b>Manual do WMS LanLimp</b></h3>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div><br/>
+    <div class="container">
+        <div class="row">
+            <h5 class="col-sm-12 text-justify"><b>> untParametroSistema</b></h5>
+            <p class="col-sm-12 text-justify">
+                <i>Formulário para manutenção dos parâmetros do sistema por empresa.</i>
+                <p class="col-sm-12 text-justify">
+                    <i>
+                        A partir deste formulário é possível executar os procedimentos inerentes a uma manutenção de cadastro, herdando da classe <u>TfrmTpCadastro</u> os seguintes eventos: Consultar, Incluir, Alterar, Excluir, Imprimir ou Exportar Lista.
+                    </i>
+                </p>
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <p class="col-sm-12 text-justify">
+                <b>Classe: </b><i>"TfrmParametroSistema"</i>
+            </p>
+            <p class="col-sm-12 text-justify">
+                <b>Herdado de:</b> <i>"TfrmTpCadastro"</i>
+            </p>
+        </div>
+    </div>
+    <footer class="footer footer-expand-xs footer-dark bg-dark fixed-bottom h-10">
+        <div class="container text-light text-center">
+            <font size="2px">© 2020 Copyright</font>
+        </div>
+    </footer>
+
+</body>
+
+</html>
