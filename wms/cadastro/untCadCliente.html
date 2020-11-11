@@ -86,13 +86,13 @@
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
             <li class="breadcrumb-item">Cadastros</li>
-            <li class="breadcrumb-item active" aria-current="page">Municípios</li>
+            <li class="breadcrumb-item active" aria-current="page">Cadastro de Clientes</li>
             <div class="container">
                 <div class="row">
                     <div class="col-1 col-sm-4 offset-lg-8 div-wrapper d-flex justify-content-center align-items-center">
                         <div class="div-to-rigth">
                             <li>
-                                <a class="navbar-brand" href="pdf/untCadMunicipio.pdf"><img height="30em" src="../../img/pdf.png" class="img-responsive" alt="logo"></a>
+                                <a class="navbar-brand" href="pdf/untCadCliente.pdf"><img height="30em" src="../../img/pdf.png" class="img-responsive" alt="logo"></a>
                             </li>
                         </div>
                     </div>
@@ -113,9 +113,9 @@
     </div><br/>
     <div class="container">
         <div class="row">
-            <h5 class="col-sm-12 text-justify"><b>> untCadMunicipio</b></h5>
+            <h5 class="col-sm-12 text-justify"><b>> untCadCliente</b></h5>
             <p class="col-sm-12 text-justify">
-                <i>Formulário para manutenção do cadastro de municipios.</i>
+                <i>Formulário para manutenção do cadastro de clientes.</i>
                 <p class="col-sm-12 text-justify">
                     <i>
                         A partir deste formulário é possível executar os procedimentos inerentes a uma manutenção de cadastro, herdando da classe TfrmTpCadastro os seguintes eventos: Consultar, Incluir, Alterar, Excluir, Imprimir ou Exportar Lista.
@@ -127,11 +127,192 @@
     <div class="container">
         <div class="row">
             <p class="col-sm-12 text-justify">
-                <b>Classe: </b><i>"TfrmCadMunicipio"</i>
+                <b>Classe: </b><i>"TfrmCadCliente"</i>
             </p>
             <p class="col-sm-12 text-justify">
                 <b>Herdado de:</b> <i>"TfrmTpCadastro"</i>
             </p>
+        </div>
+    </div>
+    <br/>
+    <div class="container">
+        <div class="row">
+            <div class="col-8 col-sm-12 offset-lg-0 div-wrapper d-flex">
+                <div class="div-to-align">
+                    <!--h5><b>Principais eventos e métodos da manutenção</b></h5-->
+                    <h5><u><b>Evento: </b>qrClienteBeforeOpen</u></h5>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <i>Procedimento com a finalidade de montar filtro para seleção dos dados do cliente.</i>
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <b>Tipo:</b><i>"Evento/TZbAdoQuery"</i>
+                </p>
+                <!--p class="col-sm-12 text-justify">
+                    <b>Chamado por:</b> <i>""</i>
+                </p-->
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h7 class="col-sm-12 text-justify"><b>PARÂMETROS</b></h7>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b>Nome:</b> <i>"DataSet"</i> | <b>Tipo:</b> <i>"TDataSet"</i><br>
+                            <b>Definição: </b> <i>"Parâmetro de entrada referênte ao objeto no qual o procedimento está sendo acionado."</i>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>RETORNO</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>EXCEÇÕES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES TÉCNICAS</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES COMPLEMENTARES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>Filtra por CNPJ, IdCliente ou Razão Social, dependendo do valor informado pelo usuário no campo de pesquisa.</i><br/>
+                            <b></b><i>Filtra os clientes "ativos" ou "inativos", dependendo da seleção realizada pelo usuário no checkbox "cbAtivo".</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="container">
+        <div class="row">
+            <div class="col-8 col-sm-12 offset-lg-0 div-wrapper d-flex">
+                <div class="div-to-align">
+                    <!--h5><b>Principais eventos e métodos da manutenção</b></h5-->
+                    <h5><u><b>Evento: </b>btnConfirmarClick</u></h5>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <i>Procedimento com a finalidade de validar a pré-existência do CNPJ informado pelo usuário e confirmar a manutenção realizada no cadastro de clientes.</i>
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <b>Tipo:</b><i>"Evento/TButton"</i>
+                </p>
+                <!--p class="col-sm-12 text-justify">
+                    <b>Chamado por:</b> <i>""</i>
+                </p-->
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h7 class="col-sm-12 text-justify"><b>PARÂMETROS</b></h7>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b>Nome:</b> <i>"Sender"</i> | <b>Tipo:</b> <i>"TObject"</i><br>
+                            <b>Definição: </b> <i>"Parâmetro de entrada referênte ao objeto no qual o procedimento está sendo acionado."</i>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>RETORNO</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>EXCEÇÕES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES TÉCNICAS</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES COMPLEMENTARES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
     <br/>
