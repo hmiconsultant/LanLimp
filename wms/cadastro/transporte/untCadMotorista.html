@@ -61,7 +61,7 @@
                                         <li><a class="dropdown-item" href="../transporte/TabelasDeFrete/untCadFreteRegiao.html">Frete por Região</a></li>
                                     </ul>
                                 </li>
-                                <li><a class="dropdown-item" href="../transporte/untCadTipoBau.html">Percurso para Manifesto</a></li>
+                                <li><a class="dropdown-item" href="../transporte/untCadPercursoManifesto.html">Percurso para Manifesto</a></li>
                             </ul>
                         </li>
                         <li>
@@ -86,14 +86,14 @@
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="../../index.html">Início</a></li>
             <li class="breadcrumb-item">Cadastros</li>
-            <li class="breadcrumb-item">Fornecedor</li>
-            <li class="breadcrumb-item active" aria-current="page">Funcionário</li>
+            <li class="breadcrumb-item">Transporte</li>
+            <li class="breadcrumb-item active" aria-current="page">Motoristas/Ajudantes</li>
             <div class="container">
                 <div class="row">
                     <div class="col-1 col-sm-4 offset-lg-8 div-wrapper d-flex justify-content-center align-items-center">
                         <div class="div-to-rigth">
                             <li>
-                                <a class="navbar-brand" href="pdf/untCadFuncionario.pdf"><img height="30em" src="../../../img/pdf.png" class="img-responsive" alt="logo"></a>
+                                <a class="navbar-brand" href="pdf/untCadMotorista.pdf"><img height="30em" src="../../../img/pdf.png" class="img-responsive" alt="logo"></a>
                             </li>
                         </div>
                     </div>
@@ -114,9 +114,9 @@
     </div><br/>
     <div class="container">
         <div class="row">
-            <h5 class="col-sm-12 text-justify"><b>> untCadFuncionario</b></h5>
+            <h5 class="col-sm-12 text-justify"><b>> untCadMotorista</b></h5>
             <p class="col-sm-12 text-justify">
-                <i>Formulário para manutenção do cadastro de funcionários.</i>
+                <i>Formulário para manutenção do cadastro de motoristas.</i>
                 <p class="col-sm-12 text-justify">
                     <i>
                         A partir deste formulário é possível executar os procedimentos inerentes a uma manutenção de cadastro, herdando da classe TfrmTpCadastro os seguintes eventos: Consultar, Incluir, Alterar, Excluir, Imprimir ou Exportar Lista.
@@ -128,7 +128,7 @@
     <div class="container">
         <div class="row">
             <p class="col-sm-12 text-justify">
-                <b>Classe: </b><i>"TfrmCadFuncionario"</i>
+                <b>Classe: </b><i>"TfrmCadMotorista"</i>
             </p>
             <p class="col-sm-12 text-justify">
                 <b>Herdado de:</b> <i>"TfrmTpCadastro"</i>
@@ -136,19 +136,21 @@
         </div>
     </div>
     <br/>
+
     <div class="container">
         <div class="row">
             <div class="col-8 col-sm-12 offset-lg-0 div-wrapper d-flex">
                 <div class="div-to-align">
                     <!--h5><b>Principais eventos e métodos da manutenção</b></h5-->
-                    <h5><u><b>Evento: </b>btFuncaoClick</u></h5>
+                    <h5><u><b>Evento: </b>btnMunicipioClick</u></h5>
+
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row">
                 <p class="col-sm-12 text-justify">
-                    <i>Procedimento com a finalidade de abrir o cadastro de função durante a manutenção do cadastro de funcionários.</i>
+                    <i>Procedimento com a finalidade de abrir o cadastro de municípios durante a manutenção do cadastro de fornecedores.</i>
                 </p>
             </div>
         </div>
@@ -217,7 +219,7 @@
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">
                         <p class="col-sm-12 text-justify">
-                            <b></b><i>Este evento permite escolher uma das funções previamente cadastrada.</i><br/>
+                            <b></b><i>Este evento permite escolher um dos municípios previamente cadastrado.</i><br/>
                         </p>
                     </li>
                 </ul>
@@ -225,12 +227,13 @@
         </div>
     </div>
     <br/>
+
     <div class="container">
         <div class="row">
             <div class="col-8 col-sm-12 offset-lg-0 div-wrapper d-flex">
                 <div class="div-to-align">
                     <!--h5><b>Principais eventos e métodos da manutenção</b></h5-->
-                    <h5><u><b>Evento: </b>edfuncaoExit</u></h5>
+                    <h5><u><b>Evento: </b>edMunicipioExit</u></h5>
 
                 </div>
             </div>
@@ -238,7 +241,7 @@
         <div class="container">
             <div class="row">
                 <p class="col-sm-12 text-justify">
-                    <i>Procedimento com a finalidade de buscar a descrição da função informada e apresentá-la ao lado do respectivo campo.</i>
+                    <i>Procedimento com a finalidade de buscar a descrição do município informado e apresentá-la ao lado do respectivo campo.</i><br/>
                 </p>
             </div>
         </div>
@@ -315,12 +318,13 @@
         </div>
     </div>
     <br/>
+
     <div class="container">
         <div class="row">
             <div class="col-8 col-sm-12 offset-lg-0 div-wrapper d-flex">
                 <div class="div-to-align">
                     <!--h5><b>Principais eventos e métodos da manutenção</b></h5-->
-                    <h5><u><b>Evento: </b>qrFuncionarioAfterInsert</u></h5>
+                    <h5><u><b>Evento: </b>btnFornecedorMotoristaClick</u></h5>
 
                 </div>
             </div>
@@ -328,14 +332,14 @@
         <div class="container">
             <div class="row">
                 <p class="col-sm-12 text-justify">
-                    <i>Procedimento com a finalidade de atribuir ao cadastro de funcionários os valores para os campos "idEmpresa" e "idFilial", tomando como base a empresa/filial as quais o usuário está conectado.</i>
+                    <i>Procedimento com a finalidade de abrir o cadastro de fornecedor durante a manutenção do cadastro de motoristas.</i><br/>
                 </p>
             </div>
         </div>
         <div class="container">
             <div class="row">
                 <p class="col-sm-12 text-justify">
-                    <b>Tipo:</b><i>"Evento/TZbADOQuery"</i>
+                    <b>Tipo:</b><i>"Evento/TDBEdit"</i>
                 </p>
                 <!--p class="col-sm-12 text-justify">
                     <b>Chamado por:</b> <i>""</i>
@@ -348,7 +352,7 @@
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">
                         <p class="col-sm-12 text-justify">
-                            <b>Nome:</b> <i>"DataSet"</i> | <b>Tipo:</b> <i>"TDataSet"</i><br>
+                            <b>Nome:</b> <i>"Sender"</i> | <b>Tipo:</b> <i>"TObject"</i><br>
                             <b>Definição: </b> <i>"Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado."</i>
                         </p>
                     </li>
@@ -397,7 +401,7 @@
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">
                         <p class="col-sm-12 text-justify">
-                            <b></b><i>"Nulo"</i><br/>
+                            <b></b><i>- Este evento permite escolher um dos fornecedores previamente cadastrado.</i><br/>
                         </p>
                     </li>
                 </ul>
@@ -405,26 +409,28 @@
         </div>
     </div>
     <br/>
+    
     <div class="container">
         <div class="row">
             <div class="col-8 col-sm-12 offset-lg-0 div-wrapper d-flex">
                 <div class="div-to-align">
                     <!--h5><b>Principais eventos e métodos da manutenção</b></h5-->
-                    <h5><u><b>Evento: </b>AcessoColetor1Click</u></h5>
+                    <h5><u><b>Evento: </b>edFornecedorMotoristaExit</u></h5>
+
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row">
                 <p class="col-sm-12 text-justify">
-                    <i>Procedimento com a finalidade de apresentar o formulário de cadastro de tarefas utilizadas através do coletor, tais como: 1- Conferência abastecimento, 2- Abastece apanha, 3- Conferência expedição, 4- Inventário e 5- Movimentação.</i>
+                    <i>Procedimento com a finalidade de buscar a razão social do fornecedor informado e apresentá-la ao lado do respectivo campo.</i><br/>
                 </p>
             </div>
         </div>
         <div class="container">
             <div class="row">
                 <p class="col-sm-12 text-justify">
-                    <b>Tipo:</b><i>"Evento/TMenuItem"</i>
+                    <b>Tipo:</b><i>"Evento/TDBEdit"</i>
                 </p>
                 <!--p class="col-sm-12 text-justify">
                     <b>Chamado por:</b> <i>""</i>
@@ -494,26 +500,119 @@
         </div>
     </div>
     <br/>
+
     <div class="container">
         <div class="row">
             <div class="col-8 col-sm-12 offset-lg-0 div-wrapper d-flex">
                 <div class="div-to-align">
                     <!--h5><b>Principais eventos e métodos da manutenção</b></h5-->
-                    <h5><u><b>Evento: </b>Button3Click</u></h5>
+                    <h5><u><b>Evento: </b>btnFornecedorTransportadoraClick</u></h5>
+
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row">
                 <p class="col-sm-12 text-justify">
-                    <i>Procedimento com a finalidade de apresentar o formulário de cadastro de atividades funcionais.</i>
+                    <i>Procedimento com a finalidade de abrir o cadastro de transportadoras durante a manutenção do cadastro de motoristas.</i><br/>
                 </p>
             </div>
         </div>
         <div class="container">
             <div class="row">
                 <p class="col-sm-12 text-justify">
-                    <b>Tipo:</b><i>"Evento/TButton"</i>
+                    <b>Tipo:</b><i>"Evento/TDBEdit"</i>
+                </p>
+                <!--p class="col-sm-12 text-justify">
+                    <b>Chamado por:</b> <i>""</i>
+                </p-->
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h7 class="col-sm-12 text-justify"><b>PARÂMETROS</b></h7>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b>Nome:</b> <i>"Sender"</i> | <b>Tipo:</b> <i>"TObject"</i><br>
+                            <b>Definição: </b> <i>"Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado."</i>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>RETORNO</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>EXCEÇÕES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES TÉCNICAS</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES COMPLEMENTARES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>- Este evento permite escolher uma das transportadoras previamente cadastrada.</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br/>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-8 col-sm-12 offset-lg-0 div-wrapper d-flex">
+                <div class="div-to-align">
+                    <!--h5><b>Principais eventos e métodos da manutenção</b></h5-->
+                    <h5><u><b>Evento: </b>edFornecedorTransportadoraExit</u></h5>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <i>Procedimento com a finalidade de buscar a razão social da transportadora informada e apresentá-la ao lado do respectivo campo.</i><br/>
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <b>Tipo:</b><i>"Evento/TDBEdit"</i>
                 </p>
                 <!--p class="col-sm-12 text-justify">
                     <b>Chamado por:</b> <i>""</i>
@@ -583,6 +682,7 @@
         </div>
     </div>
     <br/>
+    
     <footer class="footer footer-expand-xs footer-dark bg-dark fixed-bottom h-10">
         <div class="container text-light text-center">
             <font size="2px">© 2020 Copyright</font>
