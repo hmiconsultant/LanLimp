@@ -11,8 +11,9 @@ $(document).ready(function() {
 
     // make it as accordion for smaller screens
     if ($(window).width() < 992) {
+
         $('.dropdown-menu a').click(function(e) {
-            e.preventDefault();
+            //e.preventDefault();
             if ($(this).next('.submenu').length) {
                 $(this).next('.submenu').toggle();
             }
