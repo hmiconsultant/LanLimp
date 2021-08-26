@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="../js/action.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/logo_hmi.ico">
+    <title>HMI Consultant</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="col-md-2">
+            <a class="navbar-brand" href="../index.html"><img height="50em" src="../img/logo_hmi2.png" class="img-responsive" alt="logo"></a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Início <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cadastros</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="cadastro/untParametroSistema.html">Parâmetros do Sistema</a></li>
+                        <li><a class="dropdown-item" href="cadastro/untCadEmpresa.html">Empresa</a></li>
+                        <li><a class="dropdown-item" href="cadastro/untCadFilial.html">Filial</a></li>
+                        <li><a class="dropdown-item" href="cadastro/untCadMunicipio.html">Municípios</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li>
+                            <a class="dropdown-item">Fornecedor »</a>
+                            <ul class="submenu dropdown-menu">
+                                <li><a class="dropdown-item" href="cadastro/fornecedores/untCadFornecedor.html">Fornecedor</a></li>
+                                <li><a class="dropdown-item" href="cadastro/fornecedores/untCadFuncionario.html">Funcionário</a></li>
+                                <li><a class="dropdown-item" href="cadastro/fornecedores/untCadFuncao.html">Função</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown-item">Transporte »</a>
+                            <ul class="submenu dropdown-menu">
+                                <li><a class="dropdown-item" href="cadastro/transporte/untCadVeiculo.html">Veículos</a></li>
+                                <li><a class="dropdown-item" href="cadastro/transporte/untCadMotorista.html">Motoristas/Ajudantes</a></li>
+                                <li><a class="dropdown-item" href="cadastro/transporte/untCadTipoVeiculo.html">Tipos de Veículo</a></li>
+                                <li><a class="dropdown-item" href="cadastro/transporte/untCadTipoBau.html">Tipos de Baú</a></li>
+                                <li>
+                                    <a class="dropdown-item">Tabelas de Frete »</a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item" href="cadastro/transporte/TabelasDeFrete/untCadRota.html">Rota</a></li>
+                                        <li><a class="dropdown-item" href="cadastro/transporte/TabelasDeFrete/untCadRotaLocalizacao.html">Rota por Localização</a></li>
+                                        <li><a class="dropdown-item" href="cadastro/transporte/TabelasDeFrete/untCadFreteGrupo.html">Grupo de Frete</a></li>
+                                        <li><a class="dropdown-item" href="cadastro/transporte/TabelasDeFrete/untCadFreteRegiao.html">Frete por Região</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="cadastro/transporte/untCadTipoBau.html">Percurso para Manifesto</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown-item">Tabelas Fiscais »</a>
+                            <ul class="submenu dropdown-menu">
+                                <li><a class="dropdown-item" href="cadastro/tabelasFiscais/untCadCFOP.html">CFOP</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="dropdown-item" href="cadastro/untCadCertificado.html">Certificados Digitais</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a class="dropdown-item" href="cadastro/untCadCliente.html">Cadastro de Clientes</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a class="dropdown-item" href="cadastro/untCadManifestacaoMotivo.html">Tabela de Motivos</a></li>
+                    </ul>
+                </li>
+                <!--li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li-->
+            </ul>
+        </div>
+    </nav>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <!--li class="breadcrumb-item"><a href="#">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="#">Biblioteca</a></li-->
+            <li class="breadcrumb-item active" aria-current="page">Início</li>
+        </ol>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-8 col-sm-12 offset-lg-0 div-wrapper d-flex justify-content-center align-items-center">
+                <div class="div-to-align">
+                    <h3><b>Manual do WMS LanLimp</b></h3>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div><br/>
+    <div class="container">
+        <div class="row">
+            <h5 class="col-sm-12 text-justify"><b>> Seja bem-vindo!</b></h5>
+        </div>
+        <div class="row">
+            <p class="col-sm-12 text-justify">
+                Este é um manual de integração desenvolvido para facilitar a análise e a manutenção dos recursos envolvidos no WMS LanLimp.
+            </p>
+            <p class="col-sm-12 text-justify">
+                Neste manual você vai encontrar informações detalhando o funcionamento das manutenções existentes no WMS LanLimp. Entre essas manutenções estão: Parâmetros, cadastros e movimentações de entrada e saída dos produtos.
+            </p>
+            <p class="col-sm-12 text-justify">
+                Com isto, você poderá identificar de forma mais fácil onde cada ação é realizada, e terá mais praticidade e agilidade na hora de evoluir ou dar manutenção no código fonte.
+            </p>
+        </div>
+        <!--div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+        </div-->
+    </div><br/>
+    <footer class="footer footer-expand-xs footer-dark bg-dark fixed-bottom h-8">
+        <div class="container text-light text-center">
+            <font size="2px">© 2020 Copyright</font>
+        </div>
+    </footer>
+
+</body>
+
+</html>
