@@ -1,0 +1,285 @@
+<file name="untRecNotasEntrada">
+    <classe name="TfrmRecNotasEntrada" inherited="TForm">
+        <summary>
+    	    Formulário para manutenção do processo de conferência de recebimento. 
+            <para>
+                A partir deste formulário é possível executar os procedimentos inerentes ao processo de conferência de recebimento que é 
+                responsável por realizar como o próprio nome sugere, a conferência dos produtos constantes nas notas fiscais de compras de 
+                mercadorias, notas estas que foram registradas no ERP e posteriormente integradas para o WMS.
+                Para cada passo realizado nessa conferência, é atribuído à nota fiscal um status, podendo ser: Aguardando, liberada, conferindo, 
+                conferida e endereçada.
+            </para>
+        </summary>
+        <instruction name="Button1Click">
+            <summary>
+	    		Procedimento com a finalidade de filtrar as notas fiscais a serem apresentadas de acordo com as opções selecionadas.
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns></returns>
+            <exception></exception>
+            <remarks>
+                Informações complementares:
+                 <para>- Na tabela "NotaFiscalEntrada" são armazenadas as notas fiscais de entrada.</para>
+            </remarks>
+        </instruction>
+        <instruction name="CancelarNota1Click">
+            <summary>
+	    		Procedimento com a finalidade de realizar o cancelamento da conferência das notas fiscais de entrada selecionadas pelo usuário.
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns></returns>
+            <exception></exception>
+            <remarks>
+            </remarks>
+        </instruction>
+        <instruction name="LiberarParaConferencia1Click">
+            <summary>
+	    		Procedimento com a finalidade de realizar a liberação das notas fiscais selecionadas pelo usuário para conferência.
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns></returns>
+            <exception></exception>
+            <remarks>
+            </remarks>
+        </instruction>
+        <instruction name="ExcluirNotaFiscal1Click">
+            <summary>
+	    		Procedimento com a finalidade de realizar a exclusão das notas fiscais selecionadas pelo usuário para conferência onde o campo indStatus seja igual a "A".
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns></returns>
+            <exception></exception>
+            <remarks>
+                 Informações complementares:
+                 <para>- A exclusão irá eliminar os dados das seguintes tabelas na ordem citada: NFEntradaAguardando, NFEntradaLiberada, NFEntradaConferindo, NFEntradaConferida, NFEntradaEnderecada, notaFiscalEntradaItens e notaFiscalEntrada.</para>
+            </remarks>
+        </instruction>
+        <instruction name="Imprimirconfernciacega1Click">
+            <summary>
+	    		Procedimento com a finalidade de realizar a impressão do relatório da conferência cega das notas fiscais selecionadas pelo usuário.
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns></returns>
+            <exception></exception>
+            <remarks>
+            </remarks>
+        </instruction>
+        <instruction name="Estornarconferencia1Click">
+            <summary>
+	    		Procedimento com a finalidade de realizar o estorno da conferência das notas fiscais selecionadas pelo usuário.
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns></returns>
+            <exception></exception>
+            <remarks>
+                 Informações complementares:
+                 <para>- O estorno só será realizado para as notas fiscais que estão com status de: conferidas ou em conferência.</para>
+            </remarks>
+        </instruction>
+        <instruction name="Desfazerliberacaoconferncia1Click">
+            <summary>
+	    		Procedimento com a finalidade de desfazer a liberação da conferência das notas fiscais selecionadas pelo usuário.
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns></returns>
+            <exception></exception>
+            <remarks>
+                 Informações complementares:
+                 <para>- Só serão desfeitas as notas fiscais que estão com status de: conferidas, em conferência ou liberadas.</para>
+            </remarks>
+        </instruction>
+        <instruction name="Reiniciarconferenciadoproduto1Click">
+            <summary>
+	    		Procedimento com a finalidade de reiniciar a conferência dos produtos selecionadas pelo usuário.
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns></returns>
+            <exception></exception>
+            <remarks>
+            </remarks>
+        </instruction>
+        <instruction name="btEnderecamentoClick">
+            <summary>
+	    		Procedimento com a finalidade de apresentar através do formulário "frmRelOcorrenciaEnderecamento", as ocorrências de endereçamento dos produtos.
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns></returns>
+            <exception></exception>
+            <remarks>
+                 Informações complementares:
+                 <para>- Os dados serão apresentados com base nas seguintes tabelas: enderecamentoErro e produto.</para>
+            </remarks>
+        </instruction>
+        <instruction name="btImprimeMapaClick">
+            <summary>
+	    		Procedimento com a finalidade de imprimir o relatório de endereçamento e suas respectivas etiquetas.
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns></returns>
+            <exception></exception>
+            <remarks>
+            </remarks>
+        </instruction>
+        <instruction name="btNotaFiscalClick">
+            <summary>
+	    		Procedimento com a finalidade de abrir o formulário <a>"frmCadNotaFiscal"</a> permitindo ao usuário realizar a manutenção das notas fiscais de entrada.
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns></returns>
+            <exception></exception>
+            <remarks>
+            </remarks>
+        </instruction>
+        <instruction name="Conferir1Click">
+            <summary>
+	    		Procedimento com a finalidade de abrir o formulário <a>"frmCadConferencia"</a> permitindo ao usuário realizar a confirmação da conferência cega das notas fiscais de entrada.
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns></returns>
+            <exception></exception>
+            <remarks>
+            </remarks>
+        </instruction>
+        <instruction name="btnFornecedorFiltroClick">
+            <summary>
+	    		Procedimento com a finalidade de abrir o formulário <a>"frmCadFornecedor"</a> permitindo ao usuário realizar a manutenção do cadastro de fornecedor.
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns></returns>
+            <exception></exception>
+            <remarks>
+            </remarks>
+        </instruction>
+        <instruction name="Button4Click">
+            <summary>
+	    		Procedimento com a finalidade de abrir o formulário <a>"frmCadProduto"</a> permitindo ao usuário realizar a manutenção do cadastro de produto.
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns></returns>
+            <exception></exception>
+            <remarks>
+                Informações complementares:
+                <para>- O cadastro de produto é realizado através da integração com o ERP Sankhya.</para>
+            </remarks>
+        </instruction>
+        <instruction name="ConsultaEquipeDescarga1Click">
+            <summary>
+                Procedimento com a finalidade de imprimir o relatório de equipe de descarga da nota fiscal de entrada.
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns></returns>
+            <exception></exception>
+            <remarks>
+            </remarks>
+        </instruction>
+        <instruction name="Cadastrodoproduto1Click">
+            <summary>
+                Procedimento com a finalidade de abrir o formulário <a>"frmCadProduto"</a> permitindo ao usuário realizar a manutenção do cadastro de produto.
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns></returns>
+            <exception></exception>
+            <remarks>
+                Informações complementares:
+                <para>- O cadastro de produto é realizado através da integração com o ERP Sankhya.</para>
+            </remarks>
+        </instruction>
+        <instruction name="ConsultarEquipeDescargaPerodo1Click">
+            <summary>
+                Procedimento com a finalidade de apresentar através do formulário "frmRelDescarregador", o relatório de equipe de descarga da nota fiscal de entrada por período.
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns></returns>
+            <exception></exception>
+            <remarks>
+            </remarks>
+        </instruction>
+        <instruction name="Estornarocortedoproduto1Click">
+            <summary>
+                Procedimento com a finalidade de realizar o estorno do corte ocorrido nos produtos previamente selecionados pelo usuário.
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns></returns>
+            <exception></exception>
+            <remarks>
+            </remarks>
+        </instruction>
+        <instruction name="formshow">
+            <summary>
+	    		Procedimento com a finalidade de apresentar o formulário de monitoramento das notas fiscais de entrada.
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns></returns>
+            <exception></exception>
+            <remarks>           
+                Informações complementares:
+                <para>- Através do procedimento "VerificaAcessoTela" são realizadas as consultas das funcionalidades às quais o usuário poderá utilizar.</para>
+                <para>- Na tabela "vwAcessoSistema" são armazenadas as funcionalidades do sistema para cada usuário.</para>
+            </remarks>
+        </instruction>
+        <instruction name="RefazerConferenciaProdutoClick">
+            <summary>
+                Procedimento com a finalidade de refazer a conferência dos produtos da nota fiscal de entrada.
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns></returns>
+            <exception></exception>
+            <remarks>
+            </remarks>
+        </instruction>
+        <instruction name="LiberarRetornoEspelhoDocaparaConferencia1Click">
+            <summary>
+                Procedimento com a finalidade de realizar a confirmação da liberação das notas fiscais de entrada para conferência Espelho-Doca.
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns>
+                <para>Caso ocorra algum problema na liberação, é apresentada mensagem informando o motivo do erro.</para>
+            </returns>
+            <exception></exception>
+            <remarks>
+            </remarks>
+        </instruction>
+    </classe>
+</file>

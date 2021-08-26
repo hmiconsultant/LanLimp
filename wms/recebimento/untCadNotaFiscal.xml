@@ -1,0 +1,194 @@
+<file name="untCadNotaFiscal">
+    <classe name="TfrmCadNotaFiscal" inherited="TForm">
+        <summary>
+    	    Formulário para manutenção das notas fiscais de entrada. 
+            <para>
+                A partir deste formulário é possível executar os procedimentos inerentes a uma manutenção de cadastro, 
+                herdando da classe TfrmTpCadastro os seguintes eventos: Consultar, Incluir, Alterar, Excluir, Imprimir ou Exportar Lista.
+            </para>
+        </summary>
+        <instruction name="btUnidadeClick">
+            <summary>
+                Procedimento com a finalidade de abrir o cadastro de unidades do produto "FrmCadUnidade".
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns></returns>
+            <exception></exception>
+            <remarks>                
+            </remarks>
+        </instruction>
+        <instruction name="edUnidadeExit">
+            <summary>
+	    		Procedimento com a finalidade de validar a existência da unidade informada no cadastro de nota fiscal de entrada.
+                Caso a unidade seja válido, os dados da mesma são apresentados ao lado do campo.
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns></returns>
+            <exception></exception>
+            <remarks>                
+            </remarks>
+        </instruction>
+        <instruction name="Button3Click">
+            <summary>
+	    		Procedimento com a finalidade de abrir o formulário "frmCadProduto" permitindo ao usuário realizar a consulta no cadastro de produto.
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns></returns>
+            <exception></exception>
+            <remarks>                
+            </remarks>
+        </instruction>
+        <instruction name="edFornecedorExit">
+            <summary>
+	    		Procedimento com a finalidade de validar a existência do fornecedor.
+                Caso o fornecedor seja válido, os dados do mesmo são apresentados ao lado do campo.
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns></returns>
+            <exception></exception>
+            <remarks>                
+            </remarks>
+        </instruction>
+        <instruction name="btnFornecedorClick">
+            <summary>
+	    		Procedimento com a finalidade de abrir o formulário "frmCadFornecedor" permitindo ao usuário realizar a consulta no cadastro de fornecedor.
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns></returns>
+            <exception></exception>
+            <remarks>                
+            </remarks>
+        </instruction>
+        <instruction name="cxButton1Click">
+            <summary>
+	    		Procedimento com a finalidade de incluir o item da nota fiscal.
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns></returns>
+            <exception></exception>
+            <remarks>                
+            </remarks>
+        </instruction>
+        <instruction name="cxButton2Click">
+            <summary>
+	    		Procedimento com a finalidade de excluir o item da nota fiscal.
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns></returns>
+            <exception></exception>
+            <remarks>                
+            </remarks>
+        </instruction>
+        <instruction name="edProdutoTxtExit">
+            <summary>
+	    		Procedimento com a finalidade de validar a existência do produto.                
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns></returns>
+            <exception></exception>
+            <remarks>
+                <para>- Caso o produto seja válido e a opção "usar código do material do fornecedor" esteja desmarcada, 
+                os dados do mesmo são apresentados ao lado do campo.</para>
+                <para>- Quando a opção "usar código do material do fornecedor" estiver marcada, o sistema valida se o código 
+                do produto informado está associado ao fornecedor, caso não esteja permite ao usuário realizar a 
+                associação.</para>
+            </remarks>
+        </instruction>
+        <instruction name="ImportarXML1Click">
+            <summary>
+	    		Procedimento com a finalidade de importar o XML da nota fiscal de entrada eletrônica.                
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns></returns>
+            <exception></exception>
+            <remarks>
+                <para>- A importação ocorre a partir da seleção do arquivo XML feita pelo usuário, através de 
+                caixa de diálogo apresentada na manutenção.</para>
+            </remarks>
+        </instruction>
+        <instruction name="cxDBCalcEdit10ContextPopup">
+            <summary>
+	    		Procedimento com a finalidade de permitir ao usuário selecionar o pedido de compra previamente cadastrado "frmCadPedidoCompra".                
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>            
+            <param name="MousePos" type="TPoint">
+                <para>Parâmetro de entrada referente a posição em que o cursor do mouse se encontra no momento do click.</para>
+            </param>
+            <param name="Handled" type="Boolean">
+                <para>Parâmetro de entrada que define se deve ou não ser apresentado o menu de contexto padrão.</para>
+            </param>
+            <returns></returns>
+            <exception></exception>
+            <remarks>
+            </remarks>
+        </instruction>
+        <instruction name="Button4Click">
+            <summary>
+	    		Procedimento com a finalidade de permitir ao usuário selecionar o pedido de compra previamente cadastrado "frmCadPedidoCompra".
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>            
+            <returns></returns>
+            <exception></exception>
+            <remarks>
+            </remarks>
+        </instruction>
+        <instruction name="Incluir1Click">
+            <summary>
+	    		Procedimento com a finalidade de realizar o cadastro de duplicatas da nota fiscal de entrada "frmCadNotaFiscalEntradaDupl".
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>            
+            <returns></returns>
+            <exception></exception>
+            <remarks>
+            </remarks>
+        </instruction>
+        <instruction name="Alterar1Click">
+            <summary>
+	    		Procedimento com a finalidade de realizar manutenção no cadastro de duplicatas da nota fiscal de entrada.
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>            
+            <returns></returns>
+            <exception></exception>
+            <remarks>
+            </remarks>
+        </instruction>
+        <instruction name="Excluir1Click">
+            <summary>
+	    		Procedimento com a finalidade de realizar a exclusão de duplicatas da nota fiscal de entrada.
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>            
+            <returns></returns>
+            <exception></exception>
+            <remarks>
+            </remarks>
+        </instruction>
+    </classe>
+</file>
