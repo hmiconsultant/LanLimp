@@ -1,0 +1,23 @@
+<file name="untCadConferencia">
+    <classe name="TfrmCadConferencia" inherited="TForm">
+        <summary>
+            Formulário que permite ao usuário realizar a conferência cega.            
+            <para>
+                Conferência cega é um processo de identificação e alinhamento entre o item que chegou fisicamente no estoque e o constante na nota fiscal.
+            </para>
+        </summary>
+        <instruction name="cxButton1Click">
+            <summary>            
+                Procedimento com a finalidade de realizar a consulta da nota fiscal a ser conferida.
+            </summary>
+            <param>
+            </param>            
+            <returns></returns>
+            <exception></exception>
+            <remarks>
+                Informações complementares:
+                <para>- Neste procedimento, é sinalizado que a nota fiscal entrou em processo de conferência, atualizando o indStatus pra "C".</para>
+            </remarks>
+        </instruction>
+    </classe>
+</file>

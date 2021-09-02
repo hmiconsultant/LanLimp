@@ -187,7 +187,7 @@
             <exception></exception>
             <remarks>
                 Informações complementares:
-                <para>- O cadastro de produto é realizado através da integração com o ERP Sankhya.</para>
+                <para>- O cadastro do produto é realizado através da integração com o ERP Sankhya.</para>
             </remarks>
         </instruction>
         <instruction name="ConsultaEquipeDescarga1Click">
@@ -213,7 +213,7 @@
             <exception></exception>
             <remarks>
                 Informações complementares:
-                <para>- O cadastro de produto é realizado através da integração com o ERP Sankhya.</para>
+                <para>- O cadastro do produto é realizado através da integração com o ERP Sankhya.</para>
             </remarks>
         </instruction>
         <instruction name="ConsultarEquipeDescargaPerodo1Click">
