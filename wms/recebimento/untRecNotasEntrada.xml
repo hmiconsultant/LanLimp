@@ -274,11 +274,11 @@
             <param name="Sender" type="TObject">
                 <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
             </param>
-            <returns>
-                <para>Caso ocorra algum problema na liberação, é apresentada mensagem informando o motivo do erro.</para>
+            <returns>                
             </returns>
             <exception></exception>
             <remarks>
+                <para>- Caso ocorra algum problema na liberação, é apresentada mensagem informando o motivo do erro.</para>
             </remarks>
         </instruction>
     </classe>
