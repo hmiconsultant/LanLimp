@@ -1,0 +1,2050 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="../../js/action.js"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="shortcut icon" href="../../img/logo_hmi.ico">
+    <title>HMI Consultant</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="col-md-2">
+            <a class="navbar-brand" href="../../index.html"><img height="50em" src="../../img/logo_hmi2.png" class="img-responsive" alt="logo"></a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Início <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cadastros</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../cadastro/untParametroSistema.html">Parâmetros do Sistema</a></li>
+                        <li><a class="dropdown-item" href="../cadastro/untCadEmpresa.html">Empresa</a></li>
+                        <li><a class="dropdown-item" href="../cadastro/untCadFilial.html">Filial</a></li>
+                        <li><a class="dropdown-item" href="../cadastro/untCadMunicipio.html">Municípios</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li>
+                            <a class="dropdown-item">Fornecedor »</a>
+                            <ul class="submenu dropdown-menu">
+                                <li><a class="dropdown-item" href="../cadastro/fornecedores/untCadFornecedor.html">Fornecedor</a></li>
+                                <li><a class="dropdown-item" href="../cadastro/fornecedores/untCadFuncionario.html">Funcionário</a></li>
+                                <li><a class="dropdown-item" href="../cadastro/fornecedores/untCadFuncao.html">Função</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown-item">Transporte »</a>
+                            <ul class="submenu dropdown-menu">
+                                <li><a class="dropdown-item" href="../cadastro/transporte/untCadVeiculo.html">Veículos</a></li>
+                                <li><a class="dropdown-item" href="../cadastro/transporte/untCadMotorista.html">Motoristas/Ajudantes</a></li>
+                                <li><a class="dropdown-item" href="../cadastro/transporte/untCadTipoVeiculo.html">Tipos de Veículo</a></li>
+                                <li><a class="dropdown-item" href="../cadastro/transporte/untCadTipoBau.html">Tipos de Baú</a></li>
+                                <li>
+                                    <a class="dropdown-item">Tabelas de Frete »</a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item" href="../cadastro/transporte/TabelasDeFrete/untCadRota.html">Rota</a></li>
+                                        <li><a class="dropdown-item" href="../cadastro/transporte/TabelasDeFrete/untCadRotaLocalizacao.html">Rota por Localização</a></li>
+                                        <li><a class="dropdown-item" href="../cadastro/transporte/TabelasDeFrete/untCadFreteGrupo.html">Grupo de Frete</a></li>
+                                        <li><a class="dropdown-item" href="../cadastro/transporte/TabelasDeFrete/untCadFreteRegiao.html">Frete por Região</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="../cadastro/transporte/untCadTipoBau.html">Percurso para Manifesto</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown-item">Tabelas Fiscais »</a>
+                            <ul class="submenu dropdown-menu">
+                                <li><a class="dropdown-item" href="../cadastro/tabelasFiscais/untCadCFOP.html">CFOP</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="dropdown-item" href="../cadastro/untCadCertificado.html">Certificados Digitais</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a class="dropdown-item" href="../cadastro/untCadCliente.html">Cadastro de Clientes</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a class="dropdown-item" href="../cadastro/untCadManifestacaoMotivo.html">Tabela de Motivos</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recebimento</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="untRecNotasEntrada.html">Notas de Entrada</a></li>
+                        <li><a class="dropdown-item" href="untCadConferencia.html">Entrada de Conferência</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a class="dropdown-item" href="untCadNotaFiscal.html">Cadastro de Notas Fiscais</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Movimentações</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../movimentacoes/untCadInventario.html">Cadastro do Inventário</a></li>
+                        <li><a class="dropdown-item" href="../movimentacoes/untAjusteInventario.html">Ajuste do Inventário</a></li>
+                        <li><a class="dropdown-item" href="../movimentacoes/untInventarioStatus.html">Status do Inventário</a></li>
+                        <li><a class="dropdown-item" href="../movimentacoes/untMonitorInventario.html">Monitor do Inventário</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Coletor</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../../rfColetor/opcoes/untConferenciaRecebimento.html">Entrada de Conferência</a></li>
+                    </ul>
+                </li>
+                <!--li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li-->
+            </ul>
+        </div>
+    </nav>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Início</a></li>
+            <li class="breadcrumb-item">Recebimento</li>
+            <li class="breadcrumb-item active" aria-current="page">Notas de Entrada</li>
+            <div class="container">
+                <div class="row">
+                    <div class="col-1 col-sm-4 offset-lg-8 div-wrapper d-flex justify-content-center align-items-center">
+                        <div class="div-to-rigth">
+                            <li>
+                                <a class="navbar-brand" href="pdf/untRecNotasEntrada.pdf"><img height="30em" src="../../img/pdf.png" class="img-responsive" alt="logo"></a>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ol>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-8 col-sm-12 offset-lg-0 div-wrapper d-flex justify-content-center align-items-center">
+                <div class="div-to-align">
+                    <h3><b>Manual do WMS LanLimp</b></h3>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div><br/>
+    <div class="container">
+        <div class="row">
+            <h5 class="col-sm-12 text-justify"><b>> untRecNotasEntrada</b></h5>
+            <p class="col-sm-12 text-justify">
+                <i>Formulário para manutenção do processo de conferência de recebimento.</i>
+                <p class="col-sm-12 text-justify">
+                    <i>
+                        A partir deste formulário é possível executar os procedimentos inerentes ao processo de conferência de recebimento que é 
+                        responsável por realizar como o próprio nome sugere, a conferência dos produtos constantes nas notas fiscais de compras de 
+                        mercadorias, notas estas que foram registradas no ERP e posteriormente integradas para o WMS.
+                        Para cada passo realizado nessa conferência, é atribuído à nota fiscal um status, podendo ser: Aguardando, liberada, conferindo, 
+                        conferida e endereçada.
+                    </i>
+                </p>
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <p class="col-sm-12 text-justify">
+                <b>Entidade: </b><i>"NotaFiscalEntrada"</i>
+            </p>
+            <p class="col-sm-12 text-justify">
+                <b>Classe: </b><i>"TfrmRecNotasEntrada"</i>
+            </p>
+            <p class="col-sm-12 text-justify">
+                <b>Herdado de:</b> <i>"TForm"</i>
+            </p>
+        </div>
+    </div>
+    <br/>
+    <div class="container">
+        <div class="row">
+            <div class="col-8 col-sm-12 offset-lg-0 div-wrapper d-flex">
+                <div class="div-to-align">
+                    <!--h5><b>Principais eventos e métodos da manutenção</b></h5-->
+                    <h5><u><b>Evento: </b>Button1Click</u></h5>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <i>Procedimento com a finalidade de filtrar as notas fiscais a serem apresentadas de acordo com as opções selecionadas.</i>
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <b>Tipo:</b><i>"Evento/TButton"</i>
+                </p>
+                <!--p class="col-sm-12 text-justify">
+                    <b>Chamado por:</b> <i>""</i>
+                </p-->
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h7 class="col-sm-12 text-justify"><b>PARÂMETROS</b></h7>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b>Nome:</b> <i>"Sender"</i> | <b>Tipo:</b> <i>"TObject"</i><br>
+                            <b>Definição: </b> <i>"Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado."</i>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>RETORNO</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>EXCEÇÕES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES TÉCNICAS</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES COMPLEMENTARES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>- Na tabela "NotaFiscalEntrada" são armazenadas as notas fiscais de entrada.</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="container">
+        <div class="row">
+            <div class="col-8 col-sm-12 offset-lg-0 div-wrapper d-flex">
+                <div class="div-to-align">
+                    <!--h5><b>Principais eventos e métodos da manutenção</b></h5-->
+                    <h5><u><b>Evento: </b>CancelarNota1Click</u></h5>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <i>Procedimento com a finalidade de realizar o cancelamento da conferência das notas fiscais de entrada selecionadas pelo usuário.</i>
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <b>Tipo:</b><i>"Evento/TButton"</i>
+                </p>
+                <!--p class="col-sm-12 text-justify">
+                    <b>Chamado por:</b> <i>""</i>
+                </p-->
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h7 class="col-sm-12 text-justify"><b>PARÂMETROS</b></h7>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b>Nome:</b> <i>"Sender"</i> | <b>Tipo:</b> <i>"TObject"</i><br>
+                            <b>Definição: </b> <i>"Parâmetro de entrada referênte ao objeto no qual o procedimento está sendo acionado."</i>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>RETORNO</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>EXCEÇÕES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES TÉCNICAS</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES COMPLEMENTARES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-8 col-sm-12 offset-lg-0 div-wrapper d-flex">
+                <div class="div-to-align">
+                    <!--h5><b>Principais eventos e métodos da manutenção</b></h5-->
+                    <h5><u><b>Evento: </b>LiberarParaConferencia1Click</u></h5>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <i>Procedimento com a finalidade de realizar a liberação das notas fiscais selecionadas pelo usuário para conferência.</i>
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <b>Tipo:</b><i>"Evento/TButton"</i>
+                </p>
+                <!--p class="col-sm-12 text-justify">
+                    <b>Chamado por:</b> <i>""</i>
+                </p-->
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h7 class="col-sm-12 text-justify"><b>PARÂMETROS</b></h7>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b>Nome:</b> <i>"Sender"</i> | <b>Tipo:</b> <i>"TObject"</i><br>
+                            <b>Definição: </b> <i>"Parâmetro de entrada referênte ao objeto no qual o procedimento está sendo acionado."</i>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>RETORNO</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>EXCEÇÕES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES TÉCNICAS</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES COMPLEMENTARES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-8 col-sm-12 offset-lg-0 div-wrapper d-flex">
+                <div class="div-to-align">
+                    <!--h5><b>Principais eventos e métodos da manutenção</b></h5-->
+                    <h5><u><b>Evento: </b>ExcluirNotaFiscal1Click</u></h5>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <i>Procedimento com a finalidade de realizar a exclusão das notas fiscais selecionadas pelo usuário para conferência onde o campo indStatus seja igual a "A".</i>
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <b>Tipo:</b><i>"Evento/TButton"</i>
+                </p>
+                <!--p class="col-sm-12 text-justify">
+                    <b>Chamado por:</b> <i>""</i>
+                </p-->
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h7 class="col-sm-12 text-justify"><b>PARÂMETROS</b></h7>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b>Nome:</b> <i>"Sender"</i> | <b>Tipo:</b> <i>"TObject"</i><br>
+                            <b>Definição: </b> <i>"Parâmetro de entrada referênte ao objeto no qual o procedimento está sendo acionado."</i>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>RETORNO</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>EXCEÇÕES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES TÉCNICAS</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES COMPLEMENTARES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>- A exclusão irá eliminar os dados das seguintes tabelas na ordem citada: NFEntradaAguardando, NFEntradaLiberada, NFEntradaConferindo, NFEntradaConferida, NFEntradaEnderecada, notaFiscalEntradaItens e notaFiscalEntrada.</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-8 col-sm-12 offset-lg-0 div-wrapper d-flex">
+                <div class="div-to-align">
+                    <!--h5><b>Principais eventos e métodos da manutenção</b></h5-->
+                    <h5><u><b>Evento: </b>Imprimirconfernciacega1Click</u></h5>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <i>Procedimento com a finalidade de realizar a impressão do relatório da conferência cega das notas fiscais selecionadas pelo usuário.</i>
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <b>Tipo:</b><i>"Evento/TButton"</i>
+                </p>
+                <!--p class="col-sm-12 text-justify">
+                    <b>Chamado por:</b> <i>""</i>
+                </p-->
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h7 class="col-sm-12 text-justify"><b>PARÂMETROS</b></h7>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b>Nome:</b> <i>"Sender"</i> | <b>Tipo:</b> <i>"TObject"</i><br>
+                            <b>Definição: </b> <i>"Parâmetro de entrada referênte ao objeto no qual o procedimento está sendo acionado."</i>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>RETORNO</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>EXCEÇÕES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES TÉCNICAS</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES COMPLEMENTARES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-8 col-sm-12 offset-lg-0 div-wrapper d-flex">
+                <div class="div-to-align">
+                    <!--h5><b>Principais eventos e métodos da manutenção</b></h5-->
+                    <h5><u><b>Evento: </b>Estornarconferencia1Click</u></h5>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <i>Procedimento com a finalidade de realizar o estorno da conferência das notas fiscais selecionadas pelo usuário.</i>
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <b>Tipo:</b><i>"Evento/TButton"</i>
+                </p>
+                <!--p class="col-sm-12 text-justify">
+                    <b>Chamado por:</b> <i>""</i>
+                </p-->
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h7 class="col-sm-12 text-justify"><b>PARÂMETROS</b></h7>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b>Nome:</b> <i>"Sender"</i> | <b>Tipo:</b> <i>"TObject"</i><br>
+                            <b>Definição: </b> <i>"Parâmetro de entrada referênte ao objeto no qual o procedimento está sendo acionado."</i>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>RETORNO</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>EXCEÇÕES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES TÉCNICAS</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES COMPLEMENTARES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>- O estorno só será realizado para as notas fiscais que estão com status de: conferidas ou em conferência.</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-8 col-sm-12 offset-lg-0 div-wrapper d-flex">
+                <div class="div-to-align">
+                    <!--h5><b>Principais eventos e métodos da manutenção</b></h5-->
+                    <h5><u><b>Evento: </b>Desfazerliberacaoconferncia1Click</u></h5>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <i>Procedimento com a finalidade de desfazer a liberação da conferência das notas fiscais selecionadas pelo usuário.</i>
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <b>Tipo:</b><i>"Evento/TButton"</i>
+                </p>
+                <!--p class="col-sm-12 text-justify">
+                    <b>Chamado por:</b> <i>""</i>
+                </p-->
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h7 class="col-sm-12 text-justify"><b>PARÂMETROS</b></h7>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b>Nome:</b> <i>"Sender"</i> | <b>Tipo:</b> <i>"TObject"</i><br>
+                            <b>Definição: </b> <i>"Parâmetro de entrada referênte ao objeto no qual o procedimento está sendo acionado."</i>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>RETORNO</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>EXCEÇÕES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES TÉCNICAS</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES COMPLEMENTARES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>- Só serão desfeitas as notas fiscais que estão com status de: conferidas, em conferência ou liberadas.</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-8 col-sm-12 offset-lg-0 div-wrapper d-flex">
+                <div class="div-to-align">
+                    <!--h5><b>Principais eventos e métodos da manutenção</b></h5-->
+                    <h5><u><b>Evento: </b>Reiniciarconferenciadoproduto1Click</u></h5>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <i>Procedimento com a finalidade de reiniciar a conferência dos produtos selecionadas pelo usuário.</i>
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <b>Tipo:</b><i>"Evento/TButton"</i>
+                </p>
+                <!--p class="col-sm-12 text-justify">
+                    <b>Chamado por:</b> <i>""</i>
+                </p-->
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h7 class="col-sm-12 text-justify"><b>PARÂMETROS</b></h7>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b>Nome:</b> <i>"Sender"</i> | <b>Tipo:</b> <i>"TObject"</i><br>
+                            <b>Definição: </b> <i>"Parâmetro de entrada referênte ao objeto no qual o procedimento está sendo acionado."</i>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>RETORNO</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>EXCEÇÕES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES TÉCNICAS</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES COMPLEMENTARES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-8 col-sm-12 offset-lg-0 div-wrapper d-flex">
+                <div class="div-to-align">
+                    <!--h5><b>Principais eventos e métodos da manutenção</b></h5-->
+                    <h5><u><b>Evento: </b>btEnderecamentoClick</u></h5>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <i>Procedimento com a finalidade de apresentar através do formulário "frmRelOcorrenciaEnderecamento", as ocorrências de endereçamento dos produtos.</i>
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <b>Tipo:</b><i>"Evento/TButton"</i>
+                </p>
+                <!--p class="col-sm-12 text-justify">
+                    <b>Chamado por:</b> <i>""</i>
+                </p-->
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h7 class="col-sm-12 text-justify"><b>PARÂMETROS</b></h7>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b>Nome:</b> <i>"Sender"</i> | <b>Tipo:</b> <i>"TObject"</i><br>
+                            <b>Definição: </b> <i>"Parâmetro de entrada referênte ao objeto no qual o procedimento está sendo acionado."</i>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>RETORNO</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>EXCEÇÕES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES TÉCNICAS</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES COMPLEMENTARES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>- Os dados serão apresentados com base nas seguintes tabelas: enderecamentoErro e produto.</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-8 col-sm-12 offset-lg-0 div-wrapper d-flex">
+                <div class="div-to-align">
+                    <!--h5><b>Principais eventos e métodos da manutenção</b></h5-->
+                    <h5><u><b>Evento: </b>btImprimeMapaClick</u></h5>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <i>Procedimento com a finalidade de imprimir o relatório de endereçamento e suas respectivas etiquetas.</i>
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <b>Tipo:</b><i>"Evento/TButton"</i>
+                </p>
+                <!--p class="col-sm-12 text-justify">
+                    <b>Chamado por:</b> <i>""</i>
+                </p-->
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h7 class="col-sm-12 text-justify"><b>PARÂMETROS</b></h7>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b>Nome:</b> <i>"Sender"</i> | <b>Tipo:</b> <i>"TObject"</i><br>
+                            <b>Definição: </b> <i>"Parâmetro de entrada referênte ao objeto no qual o procedimento está sendo acionado."</i>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>RETORNO</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>EXCEÇÕES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES TÉCNICAS</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES COMPLEMENTARES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-8 col-sm-12 offset-lg-0 div-wrapper d-flex">
+                <div class="div-to-align">
+                    <!--h5><b>Principais eventos e métodos da manutenção</b></h5-->
+                    <h5><u><b>Evento: </b>btNotaFiscalClick</u></h5>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <i>Procedimento com a finalidade de abrir o formulário <a href="untCadNotaFiscal.html">"frmCadNotaFiscal"</a> permitindo ao usuário realizar a manutenção das notas fiscais de entrada.</i>
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <b>Tipo:</b><i>"Evento/TButton"</i>
+                </p>
+                <!--p class="col-sm-12 text-justify">
+                    <b>Chamado por:</b> <i>""</i>
+                </p-->
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h7 class="col-sm-12 text-justify"><b>PARÂMETROS</b></h7>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b>Nome:</b> <i>"Sender"</i> | <b>Tipo:</b> <i>"TObject"</i><br>
+                            <b>Definição: </b> <i>"Parâmetro de entrada referênte ao objeto no qual o procedimento está sendo acionado."</i>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>RETORNO</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>EXCEÇÕES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES TÉCNICAS</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES COMPLEMENTARES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-8 col-sm-12 offset-lg-0 div-wrapper d-flex">
+                <div class="div-to-align">
+                    <!--h5><b>Principais eventos e métodos da manutenção</b></h5-->
+                    <h5><u><b>Evento: </b>Conferir1Click</u></h5>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <i>Procedimento com a finalidade de abrir o formulário <a href="#">"frmCadConferencia"</a> permitindo ao usuário realizar a confirmação da conferência cega das notas fiscais de entrada.</i>
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <b>Tipo:</b><i>"Evento/TButton"</i>
+                </p>
+                <!--p class="col-sm-12 text-justify">
+                    <b>Chamado por:</b> <i>""</i>
+                </p-->
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h7 class="col-sm-12 text-justify"><b>PARÂMETROS</b></h7>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b>Nome:</b> <i>"Sender"</i> | <b>Tipo:</b> <i>"TObject"</i><br>
+                            <b>Definição: </b> <i>"Parâmetro de entrada referênte ao objeto no qual o procedimento está sendo acionado."</i>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>RETORNO</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>EXCEÇÕES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES TÉCNICAS</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES COMPLEMENTARES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-8 col-sm-12 offset-lg-0 div-wrapper d-flex">
+                <div class="div-to-align">
+                    <!--h5><b>Principais eventos e métodos da manutenção</b></h5-->
+                    <h5><u><b>Evento: </b>btnFornecedorFiltroClick</u></h5>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <i>Procedimento com a finalidade de abrir o formulário <a href="../cadastro/fornecedores/untCadFornecedor.html">"frmCadFornecedor"</a> permitindo ao usuário realizar a manutenção do cadastro de fornecedor.</i>
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <b>Tipo:</b><i>"Evento/TButton"</i>
+                </p>
+                <!--p class="col-sm-12 text-justify">
+                    <b>Chamado por:</b> <i>""</i>
+                </p-->
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h7 class="col-sm-12 text-justify"><b>PARÂMETROS</b></h7>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b>Nome:</b> <i>"Sender"</i> | <b>Tipo:</b> <i>"TObject"</i><br>
+                            <b>Definição: </b> <i>"Parâmetro de entrada referênte ao objeto no qual o procedimento está sendo acionado."</i>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>RETORNO</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>EXCEÇÕES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES TÉCNICAS</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES COMPLEMENTARES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-8 col-sm-12 offset-lg-0 div-wrapper d-flex">
+                <div class="div-to-align">
+                    <!--h5><b>Principais eventos e métodos da manutenção</b></h5-->
+                    <h5><u><b>Evento: </b>Button4Click</u></h5>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <i>Procedimento com a finalidade de abrir o formulário "frmCadProduto" permitindo ao usuário realizar a manutenção do cadastro de produto.</i>
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <b>Tipo:</b><i>"Evento/TButton"</i>
+                </p>
+                <!--p class="col-sm-12 text-justify">
+                    <b>Chamado por:</b> <i>""</i>
+                </p-->
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h7 class="col-sm-12 text-justify"><b>PARÂMETROS</b></h7>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b>Nome:</b> <i>"Sender"</i> | <b>Tipo:</b> <i>"TObject"</i><br>
+                            <b>Definição: </b> <i>"Parâmetro de entrada referênte ao objeto no qual o procedimento está sendo acionado."</i>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>RETORNO</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>EXCEÇÕES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES TÉCNICAS</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES COMPLEMENTARES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>O cadastro do produto é realizado através da integração com o ERP Sankhya.</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-8 col-sm-12 offset-lg-0 div-wrapper d-flex">
+                <div class="div-to-align">
+                    <!--h5><b>Principais eventos e métodos da manutenção</b></h5-->
+                    <h5><u><b>Evento: </b>ConsultaEquipeDescarga1Click</u></h5>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <i>Procedimento com a finalidade de imprimir o relatório de equipe de descarga da nota fiscal de entrada.</i>
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <b>Tipo:</b><i>"Evento/TButton"</i>
+                </p>
+                <!--p class="col-sm-12 text-justify">
+                    <b>Chamado por:</b> <i>""</i>
+                </p-->
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h7 class="col-sm-12 text-justify"><b>PARÂMETROS</b></h7>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b>Nome:</b> <i>"Sender"</i> | <b>Tipo:</b> <i>"TObject"</i><br>
+                            <b>Definição: </b> <i>"Parâmetro de entrada referênte ao objeto no qual o procedimento está sendo acionado."</i>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>RETORNO</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>EXCEÇÕES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES TÉCNICAS</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES COMPLEMENTARES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-8 col-sm-12 offset-lg-0 div-wrapper d-flex">
+                <div class="div-to-align">
+                    <!--h5><b>Principais eventos e métodos da manutenção</b></h5-->
+                    <h5><u><b>Evento: </b>Cadastrodoproduto1Click</u></h5>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <i>Procedimento com a finalidade de abrir o formulário "frmCadProduto" permitindo ao usuário realizar a manutenção do cadastro de produto.</i>
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <b>Tipo:</b><i>"Evento/TButton"</i>
+                </p>
+                <!--p class="col-sm-12 text-justify">
+                    <b>Chamado por:</b> <i>""</i>
+                </p-->
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h7 class="col-sm-12 text-justify"><b>PARÂMETROS</b></h7>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b>Nome:</b> <i>"Sender"</i> | <b>Tipo:</b> <i>"TObject"</i><br>
+                            <b>Definição: </b> <i>"Parâmetro de entrada referênte ao objeto no qual o procedimento está sendo acionado."</i>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>RETORNO</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>EXCEÇÕES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES TÉCNICAS</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES COMPLEMENTARES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>O cadastro do produto é realizado através da integração com o ERP Sankhya.</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-8 col-sm-12 offset-lg-0 div-wrapper d-flex">
+                <div class="div-to-align">
+                    <!--h5><b>Principais eventos e métodos da manutenção</b></h5-->
+                    <h5><u><b>Evento: </b>ConsultarEquipeDescargaPerodo1Click</u></h5>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <i>Procedimento com a finalidade de apresentar através do formulário "frmRelDescarregador", o relatório de equipe de descarga da nota fiscal de entrada por período.</i>
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <b>Tipo:</b><i>"Evento/TButton"</i>
+                </p>
+                <!--p class="col-sm-12 text-justify">
+                    <b>Chamado por:</b> <i>""</i>
+                </p-->
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h7 class="col-sm-12 text-justify"><b>PARÂMETROS</b></h7>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b>Nome:</b> <i>"Sender"</i> | <b>Tipo:</b> <i>"TObject"</i><br>
+                            <b>Definição: </b> <i>"Parâmetro de entrada referênte ao objeto no qual o procedimento está sendo acionado."</i>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>RETORNO</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>EXCEÇÕES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES TÉCNICAS</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES COMPLEMENTARES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-8 col-sm-12 offset-lg-0 div-wrapper d-flex">
+                <div class="div-to-align">
+                    <!--h5><b>Principais eventos e métodos da manutenção</b></h5-->
+                    <h5><u><b>Evento: </b>Estornarocortedoproduto1Click</u></h5>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <i>Procedimento com a finalidade de realizar o estorno do corte ocorrido nos produtos previamente selecionados pelo usuário.</i>
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <b>Tipo:</b><i>"Evento/TButton"</i>
+                </p>
+                <!--p class="col-sm-12 text-justify">
+                    <b>Chamado por:</b> <i>""</i>
+                </p-->
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h7 class="col-sm-12 text-justify"><b>PARÂMETROS</b></h7>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b>Nome:</b> <i>"Sender"</i> | <b>Tipo:</b> <i>"TObject"</i><br>
+                            <b>Definição: </b> <i>"Parâmetro de entrada referênte ao objeto no qual o procedimento está sendo acionado."</i>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>RETORNO</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>EXCEÇÕES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES TÉCNICAS</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES COMPLEMENTARES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-8 col-sm-12 offset-lg-0 div-wrapper d-flex">
+                <div class="div-to-align">
+                    <!--h5><b>Principais eventos e métodos da manutenção</b></h5-->
+                    <h5><u><b>Evento: </b>formshow</u></h5>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <i>Procedimento com a finalidade de apresentar o formulário de monitoramento das notas fiscais de entrada.</i>
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <b>Tipo:</b><i>"Evento/TButton"</i>
+                </p>
+                <!--p class="col-sm-12 text-justify">
+                    <b>Chamado por:</b> <i>""</i>
+                </p-->
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h7 class="col-sm-12 text-justify"><b>PARÂMETROS</b></h7>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b>Nome:</b> <i>"Sender"</i> | <b>Tipo:</b> <i>"TObject"</i><br>
+                            <b>Definição: </b> <i>"Parâmetro de entrada referênte ao objeto no qual o procedimento está sendo acionado."</i>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>RETORNO</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>EXCEÇÕES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES TÉCNICAS</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES COMPLEMENTARES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>- Através do procedimento "VerificaAcessoTela" são realizadas as consultas das funcionalidades às quais o usuário poderá utilizar.</i><br/>
+                            <b></b><i>- Na tabela "vwAcessoSistema" são armazenadas as funcionalidades do sistema para cada usuário.</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-8 col-sm-12 offset-lg-0 div-wrapper d-flex">
+                <div class="div-to-align">
+                    <!--h5><b>Principais eventos e métodos da manutenção</b></h5-->
+                    <h5><u><b>Evento: </b>RefazerConferenciaProdutoClick</u></h5>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <i>Procedimento com a finalidade de refazer a conferência dos produtos da nota fiscal de entrada.</i>
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <b>Tipo:</b><i>"Evento/TButton"</i>
+                </p>
+                <!--p class="col-sm-12 text-justify">
+                    <b>Chamado por:</b> <i>""</i>
+                </p-->
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h7 class="col-sm-12 text-justify"><b>PARÂMETROS</b></h7>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b>Nome:</b> <i>"Sender"</i> | <b>Tipo:</b> <i>"TObject"</i><br>
+                            <b>Definição: </b> <i>"Parâmetro de entrada referênte ao objeto no qual o procedimento está sendo acionado."</i>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>RETORNO</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>EXCEÇÕES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES TÉCNICAS</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES COMPLEMENTARES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-8 col-sm-12 offset-lg-0 div-wrapper d-flex">
+                <div class="div-to-align">
+                    <!--h5><b>Principais eventos e métodos da manutenção</b></h5-->
+                    <h5><u><b>Evento: </b>LiberarRetornoEspelhoDocaparaConferencia1Click</u></h5>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <i>Procedimento com a finalidade de realizar a confirmação da liberação das notas fiscais de entrada para conferência Espelho-Doca.</i>
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="col-sm-12 text-justify">
+                    <b>Tipo:</b><i>"Evento/TButton"</i>
+                </p>
+                <!--p class="col-sm-12 text-justify">
+                    <b>Chamado por:</b> <i>""</i>
+                </p-->
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h7 class="col-sm-12 text-justify"><b>PARÂMETROS</b></h7>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b>Nome:</b> <i>"Sender"</i> | <b>Tipo:</b> <i>"TObject"</i><br>
+                            <b>Definição: </b> <i>"Parâmetro de entrada referênte ao objeto no qual o procedimento está sendo acionado."</i>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>RETORNO</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>Caso ocorra algum problema na liberação, é apresentada mensagem informando o motivo do erro.</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>EXCEÇÕES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES TÉCNICAS</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="col-sm-12 text-justify"><b>INFORMAÇÕES COMPLEMENTARES</b></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="col-sm-12 text-justify">
+                            <b></b><i>"Nulo"</i><br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <footer class="footer footer-expand-xs footer-dark bg-dark fixed-bottom h-10">
+        <div class="container text-light text-center">
+            <font size="2px">© 2022 Copyright</font>
+        </div>
+    </footer>
+
+</body>
+
+</html>

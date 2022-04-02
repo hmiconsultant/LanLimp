@@ -1,0 +1,116 @@
+<file name="untMonitorInventario">
+    <classe name="TfrmMonitorInventario" inherited="TForm">
+        <summary>
+    	    Formulário para monitoramento do inventário. 
+            <para>
+                A partir deste formulário é possível executar os procedimentos inerentes ao processo de inventário
+                como a abertura e o monitoramento. Este processo tem por objetivo realizar a contagem dos itens e 
+                produtos que estão armazenados no estoque. Após essa contagem é necessário fazer a comparação do 
+                resultado com o que está registrado no controle digital.
+                Essa é a forma correta de fazer inventário de estoque e verificar se há alguma divergência 
+                entre os resultados.
+            </para>
+        </summary>
+        <instruction name="Atualizar1Click">
+            <summary>
+	    		Procedimento com a finalidade de atualizar os dados apresentados no grid da manutenção de monitoramento.
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns></returns>
+            <exception></exception>
+            <remarks>
+            </remarks>
+        </instruction>
+        <instruction name="cxButton2Click">
+            <summary>
+	    		Procedimento com a finalidade de realizar a abertura geral do inventário de produtos, considerando todas 
+                as ruas.
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns></returns>
+            <exception></exception>
+            <remarks>
+                Informações complementares:
+                <para>- A abertura do inventário só será possível caso não exista nenhum inventário geral em aberto.</para>
+                <para>- O usuário poderá optar por abrir o inventário por picking, por pulmão ou por ambos.</para>
+            </remarks>
+        </instruction>
+        <instruction name="btNovaContagemClick">
+            <summary>
+	    		Procedimento com a finalidade de realizar a abertura do inventário de produtos, considerando a rua e 
+                os níveis informados pelo usuário.
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns>
+            </returns>
+            <exception></exception>
+            <remarks>
+                Informações complementares:
+                <para>- A abertura do inventário só será possível caso não exista nenhum inventário em aberto na mesma rua.</para>
+                <para>- O usuário poderá optar por abrir o inventário das ruas por picking, por pulmão ou por ambos.</para>
+            </remarks>
+        </instruction>
+        <instruction name="Resumo1Click">
+            <summary>
+	    		Procedimento com a finalidade de apresentar ao usuário o resumo sintético por nível com a atual situação
+                do inventário de produtos.
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns>
+            </returns>
+            <exception></exception>
+            <remarks>                
+            </remarks>
+        </instruction>
+        <instruction name="Reabrirendereopdigitao1Click">
+            <summary>
+	    		Procedimento com a finalidade de permitir ao usuário reabrir o endereço para digitação, 
+                a partir da atualização do status do inventário.
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns>
+            </returns>
+            <exception></exception>
+            <remarks>                
+            </remarks>
+        </instruction>
+        <instruction name="ResumoporRua1Click">
+            <summary>
+	    		Procedimento com a finalidade de apresentar ao usuário o resumo sintético por rua e nível 
+                com a atual situação do inventário de produtos.
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns>
+            </returns>
+            <exception></exception>
+            <remarks>                
+            </remarks>
+        </instruction>
+        <instruction name="ProduoAcompanhamento1Click">
+            <summary>
+	    		Procedimento com a finalidade de permitir ao usuário acompanhar por hora a produção do 
+                inventário de produtos, como também a produção média quantitativa dos endereços por nível.
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns>
+            </returns>
+            <exception></exception>
+            <remarks>                
+            </remarks>
+        </instruction>
+    </classe>
+</file>

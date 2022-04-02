@@ -1,0 +1,21 @@
+<file name="untInventarioStatus">
+    <classe name="frmInventarioStatus" inherited="TForm">
+        <summary>
+    	    A partir deste formulário é possível ao usuário visualizar detalhadamente o status atual
+            de cada inventário, destacando as principais divergências identificadas pelo sistema.
+        </summary>
+        <instruction name="cxGrid1DBTableView1DblClick">
+            <summary>
+	    		Procedimento com a finalidade de permitir ao usuário consultar os endereços dos produtos
+                inventariados que ainda não tiveram sua quantidade contada.
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns></returns>
+            <exception></exception>
+            <remarks>
+            </remarks>
+        </instruction>
+    </classe>
+</file>

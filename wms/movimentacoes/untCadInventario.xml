@@ -1,0 +1,24 @@
+<file name="untCadInventario">
+    <classe name="TFrmCadInventario" inherited="TForm">
+        <summary>
+    	    Formulário para registrar a quantidade física do produto no inventário.
+            <para>
+                Neste procedimento é possível realizar a inclusão ou alteração das respectivas quantidades,
+                desde que o inventário não se encontre com status de finalizado.
+            </para>            
+        </summary>
+        <instruction name="btConfirmarClick">
+            <summary>
+	    		Procedimento com a finalidade de permitir ao usuário confirmar a quantidade 
+                física do produto informada no inventário.
+            </summary>
+            <param name="Sender" type="TObject">
+                <para>Parâmetro de entrada referente ao objeto no qual o procedimento está sendo acionado.</para>
+            </param>
+            <returns></returns>
+            <exception></exception>
+            <remarks>
+            </remarks>
+        </instruction>
+    </classe>
+</file>
